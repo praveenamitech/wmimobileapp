@@ -1,0 +1,21 @@
+Loading screen...
+
+init cmd : 3,#sno
+in mobile: show item with serial no, make (gen)
+
+// meter validation
+form mobile: 01-3f-4d-54-50-4c-aa-aa-aa-86 --- 1st command
+resp from server: 4706 - some hex value 21 bytes
+
+from mobile: 01-42-44-ef-ef-aa-aa-aa-aa-f4 --- 2nd command
+resp from server: 4706
+
+// contains serial no in 7, 8, 9 bytes
+from mobile: 01-72-01-01-aa-aa-aa-aa-aa-3a --- 3rd command
+resp from server: 4706: if (21 bytes hex)
+
+from mobile: 01-72-01-cb-aa-aa-aa-aa-aa-70 --- 4th command
+resp from server: 4706: if(21 bytes)
+
+create file:
+genus_#sno_timestamp.txt

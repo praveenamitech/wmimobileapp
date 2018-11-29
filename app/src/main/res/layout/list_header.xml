@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:padding="8dp"
+        android:background="@color/colorBackgroundDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/indexNoHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#212121"
+                android:text=" # "
+                android:textSize="16dp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.34"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/meterSnoHeaderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mtr#"
+                android:textColor="#212121"
+                android:textSize="16dp"></TextView>
+        </LinearLayout>
+
+        <!--status-->
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_weight="0.20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/statusHeaderText"
+                android:textAlignment="center"
+                android:text="Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="0.15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/uploadStatusHeaderText"
+                android:textAlignment="center"
+                android:text="Upload Status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:layout_weight="0.23"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:visibility="gone"
+                android:textAlignment="center"
+                android:text="Read1 Again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <CheckBox
+                android:id="@+id/readAgainCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="2"
+                android:text="Read Again" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Meter Scanner</string>
+    <string name="app_version">Version 1.0.6</string>
+
+    <string name="saved_meters_tab_name">ASSIGNED</string>
+    <string name="undefined_meters_tab_name">UNKNOWN</string>
+
+    <string name="ftp_settings_menu">Server Settings</string>
+    <string name="add_new_meter_menu">Add New Meter</string>
+    <string name="upload_saved_meters_menu">Upload Assigned Meters Files</string>
+    <string name="upload_undefined_meters_menu">Upload Unknown Meters Files</string>
+    <string name="import_meters_data_menu">Import Meters Data</string>
+    <string name="export_meters_data_menu">Export Meters Data</string>
+    <string name="unregister_license_menu">Unregister License</string>
+
+    <string-array name="make_entries">
+        <item>SECURE</item>
+        <item>LNT</item>
+        <item>GENUS</item>
+        <item>SECURE_DLMS</item>
+    </string-array>
+
+    <string-array name="make_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>50</item>
+    </string-array>
+</resources>

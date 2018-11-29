@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ftp_settings"
+        android:orderInCategory="100"
+        android:title="@string/ftp_settings_menu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/add_new_meter"
+        android:orderInCategory="100"
+        android:title="@string/add_new_meter_menu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/upload_all_saved"
+        android:orderInCategory="100"
+        android:title="@string/upload_saved_meters_menu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/upload_all_undefined"
+        android:orderInCategory="100"
+        android:title="@string/upload_undefined_meters_menu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/import_meters_data"
+        android:orderInCategory="100"
+        android:title="@string/import_meters_data_menu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/export_meters_data"
+        android:orderInCategory="100"
+        android:title="@string/export_meters_data_menu"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/unregister_license"
+        android:orderInCategory="100"
+        android:title="@string/unregister_license_menu"
+        app:showAsAction="never" />
+</menu>

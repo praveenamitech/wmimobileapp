@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/fileNameTextView"
+        android:textSize="20dp"
+        android:text="File name"
+        android:textColor="#212121"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/sizeTextView"
+            android:text="34Kb"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/lastModifiedTextView"
+            android:textAlignment="viewEnd"
+            android:text="created at"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/uploadBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload and Delete file" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="0.2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/uploadProgressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
